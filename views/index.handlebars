@@ -1,0 +1,22 @@
+<h1>Hamburger Saver</h1>
+
+<h3>Save Hamburgers</h3>
+
+<ul>
+  {{#each hamburgers}}
+  	<li>
+  	   <p>ID: {{this.id}}</p>
+       <p>Hamburger: {{this.hamburger}}</p>
+       <p>Devoured: {{this.devoured}}</p>
+  	</li>
+  {{/each}}
+</ul>
+
+<div>
+  <form action="/" method="POST">
+  	<textarea type="text" name="hamburger"></textarea>
+
+  	<button type="submit">Submit</button>
+  </form>
+</div>
+ 
