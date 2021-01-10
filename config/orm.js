@@ -47,6 +47,7 @@ var orm = {
       if (err) {
         throw err;
       }
+      console.log("In orm.all" + result)
       cb(result);
     });
   },
