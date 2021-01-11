@@ -4,11 +4,12 @@ var mysql = require("mysql");
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
+  var password = require("../../password.js")
   connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     port: process.env.PORT || 3306,
-    password: "",
+    password: password.getPassword(),
     database: "hamburgers_db"
   });
 };
