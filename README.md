@@ -4,6 +4,8 @@
 # Project Descrition      
     Track the hamburgers you have eaten
 
+![Hamburger Tracker image](./assets/EatDaBurger.png)
+
 # Table of Contents      
 ```
 .
